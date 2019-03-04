@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="helloWorld" class="com.soft1721.spring.hello.HelloWorld"/>
+    <bean id="student" class="com.soft1721.spring.hello.Student">
+        <property name="name" value="Lei Liu"/>
+        <property name="age" value="19"/>
+        <property name="phone" ref="phone"/>
+    </bean>
+    <bean id="phone" class="com.soft1721.spring.hello.Phone">
+        <constructor-arg name="tel" value="12345678911"/>
+        <constructor-arg name="brand" value="HuaWei"/>
+        <constructor-arg name="price" value="3333"/>
+    </bean>
+</beans>
