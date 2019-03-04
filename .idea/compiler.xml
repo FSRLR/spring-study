@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Ioc" target="1.7" />
+      <module name="Ioc" target="1.8" />
       <module name="quickstart" target="1.8" />
     </bytecodeTargetLevel>
   </component>
