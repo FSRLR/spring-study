@@ -18,4 +18,13 @@
         <constructor-arg name="b" value="3"/>
     </bean>
 
+
+    <bean id="user1" class="com.spring.quickstart.User">
+        <constructor-arg name="username" value="FSR"/>
+        <constructor-arg name="password" value="123123"/>
+    </bean>
+    <bean id="userlogin" class="com.spring.quickstart.UserLogin">
+        <property name="user" ref="user1"/>
+    </bean>
+
 </beans>

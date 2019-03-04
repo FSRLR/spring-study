@@ -8,17 +8,14 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import static org.junit.Assert.*;
 
-//指定单元测试环境
 @RunWith(SpringJUnit4ClassRunner.class)
-//指定配置文件路径
 @ContextConfiguration(locations = {"/spring.xml"})
-public class MaxTest {
-    //自定注入Max
+public class UserLoginTest {
     @Autowired
-    private Max max;
+    private UserLogin userLogin;
 
     @Test
-    public void getMax() {
-        assertEquals(5,max.getMax() );
+    public void userLogin() {
+        assertTrue(userLogin.userLogin());
     }
 }
