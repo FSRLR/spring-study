@@ -3,24 +3,24 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="car1" class="com.spring.quickstart.Car">
+    <bean id="car1" class="com.spring.quickstart.quickstart.Car">
         <property name="brand" value="奥迪"/>
         <property name="color" value="黑色"/>
         <property name="parameter" value="4.0t"/>
     </bean>
-    <bean id="car2" class="com.spring.quickstart.Car">
+    <bean id="car2" class="com.spring.quickstart.quickstart.Car">
         <property name="brand" value="宝马"/>
         <property name="color" value="白色"/>
         <property name="parameter" value="4.0t"/>
 
     </bean>
-    <bean id="car3" class="com.spring.quickstart.Car">
+    <bean id="car3" class="com.spring.quickstart.quickstart.Car">
         <property name="brand" value="宝马"/>
         <property name="color" value="棕色"/>
         <property name="parameter" value="3.5t"/>
     </bean>
 
-    <bean id="boss1" class="com.spring.quickstart.Boss">
+    <bean id="boss1" class="com.spring.quickstart.quickstart.Boss">
         <property name="name" value="马云"/>
         <property name="company" value="阿里巴巴"/>
         <property name="car" ref="car1"/>
@@ -32,7 +32,7 @@
             </list>
         </property>
     </bean>
-    <bean id="boss2" class="com.spring.quickstart.Boss">
+    <bean id="boss2" class="com.spring.quickstart.quickstart.Boss">
         <property name="name" value="马化腾"/>
         <property name="company" value="腾讯"/>
         <property name="car" ref="car2"/>
@@ -43,7 +43,7 @@
             </list>
         </property>
     </bean>
-    <bean id="boss3" class="com.spring.quickstart.Boss">
+    <bean id="boss3" class="com.spring.quickstart.quickstart.Boss">
         <property name="name" value="雷军"/>
         <property name="company" value="小米"/>
         <property name="car" ref="car3"/>
@@ -54,7 +54,7 @@
             </list>
         </property>
     </bean>
-    <bean id="meeting" class="com.spring.quickstart.Meeting">
+    <bean id="meeting" class="com.spring.quickstart.quickstart.Meeting">
         <property name="theme" value="中国互联网发展讨论会"/>
         <property name="bosses">
             <list>

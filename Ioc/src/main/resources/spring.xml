@@ -5,25 +5,25 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id="messageServiceImpl" class="com.spring.quickstart.MessageSeriviceImpl">
+    <bean id="messageServiceImpl" class="com.spring.quickstart.quickstart.MessageSeriviceImpl">
         <constructor-arg name="username" value="FSR"/>
         <constructor-arg name="age" value="18"/>
     </bean>
-    <bean id="messagePrinter" class="com.spring.quickstart.MessagePrinter">
+    <bean id="messagePrinter" class="com.spring.quickstart.quickstart.MessagePrinter">
         <constructor-arg name="service" ref="messageServiceImpl"/>
     </bean>
 
-    <bean id="max" class="com.spring.quickstart.Max">
+    <bean id="max" class="com.spring.quickstart.quickstart.Max">
         <constructor-arg name="a" value="5"/>
         <constructor-arg name="b" value="3"/>
     </bean>
 
 
-    <bean id="user1" class="com.spring.quickstart.User">
+    <bean id="user1" class="com.spring.quickstart.quickstart.User">
         <constructor-arg name="username" value="FSR"/>
         <constructor-arg name="password" value="123123"/>
     </bean>
-    <bean id="userlogin" class="com.spring.quickstart.UserLogin">
+    <bean id="userlogin" class="com.spring.quickstart.quickstart.UserLogin">
         <property name="user" ref="user1"/>
     </bean>
 

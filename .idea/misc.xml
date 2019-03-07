@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/Ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/AOP/pom.xml" />
       </list>
     </option>
   </component>
