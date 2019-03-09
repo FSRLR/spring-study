@@ -1175,3 +1175,16 @@ Caused by: java.net.UnknownHostException: www.springframework.org
 2019-03-07 10:22:39 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'hello'
 2019-03-07 10:22:39 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
 2019-03-07 10:22:39 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'advice'
+2019-03-07 10:31:02 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1963006a
+2019-03-07 10:31:02 DEBUG XmlBeanDefinitionReader:395 - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2019-03-07 10:31:02 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-03-07 10:31:02 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'hello'
+2019-03-07 10:31:02 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2019-03-07 10:31:03 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'advice'
+2019-03-07 11:13:29 DEBUG ClassPathXmlApplicationContext:594 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1963006a
+2019-03-07 11:13:30 DEBUG XmlBeanDefinitionReader:395 - Loaded 5 bean definitions from class path resource [applicationContext.xml]
+2019-03-07 11:13:30 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-03-07 11:13:30 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'hello'
+2019-03-07 11:13:30 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2019-03-07 11:13:30 DEBUG DefaultListableBeanFactory:213 - Creating shared instance of singleton bean 'advice'
+2019-03-07 11:13:30  INFO Hello:13 - this is a log info
