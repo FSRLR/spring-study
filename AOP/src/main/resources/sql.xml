@@ -9,11 +9,11 @@
 
 
 
-    <bean id="userDao" class="com.spring.quickstart.UserDaoImpl"/>
-    <bean id="advice" class="com.spring.quickstart.BeforeAdvice"/>
+    <bean id="userDao" class="com.spring.aop.aop.UserDaoImpl"/>
+    <bean id="advice" class="com.spring.aop.aop.BeforeAdvice"/>
     <aop:config>
         <aop:aspect id="before" ref="advice">
-            <aop:pointcut id="myPointCut" expression="execution(* com.spring.quickstart.*.*(..))"/>
+            <aop:pointcut id="myPointCut" expression="execution(* com.spring.aop.aop.*.*(..))"/>
             <aop:before method="beforeMethod" pointcut-ref="myPointCut"/>
         </aop:aspect>
     </aop:config>

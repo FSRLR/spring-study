@@ -9,12 +9,22 @@
 
 
 
-       <bean id="hello" class="com.spring.quickstart.HelloImpl"/>
-       <bean id="advice" class="com.spring.quickstart.MyBeforeAdvice"/>
-       <aop:config>
-           <aop:aspect id="before" ref="advice">
-                  <aop:pointcut id="myPointCut" expression="execution(* com.spring.quickstart.*.*(..))"/>
-                  <aop:before method="beforeMethod" pointcut-ref="myPointCut"/>
-           </aop:aspect>
-       </aop:config>
+<!--       <bean id="hello" class="com.spring.aopopx.HelloImpl"/>
+       <bean id="advice" class="com.spring.aopopx.MyBeforeAdvice"/>
+       <image:config>
+           <image:aspect id="before" ref="advice">
+                  <image:pointcut id="myPointCut" expression="execution(* com.spring.aopopx.*.*(..))"/>
+                  <image:before method="beforeMethod" pointcut-ref="myPointCut"/>
+           </image:aspect>
+       </image:config>-->
+<!--
+    <aop:aspectj-autoproxy/>
+    <bean id="fighter" class="com.spring.aop.Fighter"/>
+    <bean id="tiger" class="com.spring.aop.Tiger"/>
+-->
+
+    <aop:aspectj-autoproxy/>
+    <bean id="imageCopy" class="com.spring.image.ImageCopy"/>
+    <bean id="imageHandler" class="com.spring.image.ImageHandler"/>
+
 </beans>
