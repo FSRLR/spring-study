@@ -28,6 +28,7 @@ public class ImageHandler {
         //通过字节输入流创建一个BufferedImage对象
         InputStream input=new FileInputStream(srcFile);
         BufferedImage srcImg= ImageIO.read(input);
+        //自动获得图片的尺寸
         int width=srcImg.getWidth();
         int height=srcImg.getHeight();
         File destFile = new File("D:/FSR2.jpg");
@@ -35,6 +36,7 @@ public class ImageHandler {
         int size=20;
         Font font = new Font("微软雅黑",Font.BOLD,size);
         String text="by @26";
+        //给图片添加水印
         ImageUtil.pressText(srcFile,destFile,text,color,font,(width-text.length()*size)/2,height/2-size,1.0f);
     }
 
@@ -43,6 +45,7 @@ public class ImageHandler {
         logger.info("开始转黑白");
         File srcFile = new File("E:/FSR.jpg");
         File destFile = new File("E:/FSR2.jpg");
+        //将图片变为黑白
         ImageUtil.gray(srcFile,destFile);
     }
 

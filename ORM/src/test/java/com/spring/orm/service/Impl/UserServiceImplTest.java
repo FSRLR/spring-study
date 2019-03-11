@@ -21,24 +21,24 @@ public class UserServiceImplTest {
     @Test
     public void insertUser() {
         User user = new User();
-        user.setAccount("test");
-        user.setPassword("8888888");
-        user.setCredits(999);
+        user.setAccount("1702343113");
+        user.setPassword("11111");
+        user.setCredits(66);
         int n = userService.insertUser(user);
         assertEquals(1, n);
     }
 
     @Test
     public void deleteUser() {
-        int n = userService.deleteUser(1);
+        int n = userService.deleteUser(3);
         assertEquals(1,n);
     }
 
     @Test
     public void updateUser() {
         User user = userService.getUser(2);
-        user.setPassword("00000000");
-        user.setCredits(1111111);
+        user.setPassword("1702343111");
+        user.setCredits(52);
         int n = userService.updateUser(user);
         assertEquals(1, n);
     }
